@@ -92,7 +92,7 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
       </Link>
       
       {/* Book Information */}
-      <div className="p-4">
+      <div className="p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
         <Link href={`/book/${book.id}`} className="block cursor-pointer">
           <h3 className="text-lg font-semibold text-gray-800 truncate hover:text-blue-600 transition-colors duration-200">{book.title}</h3>
           <p className="text-sm text-gray-600 mt-1">by {book.author}</p>
